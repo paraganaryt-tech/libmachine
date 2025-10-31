@@ -4,6 +4,29 @@ This is an edit of prev libftest made by @jtoty to fit with the 2019 project lib
 This update was made by @lmartin <br/>
 
 # libft-war-machine
+
+## Example Library
+
+This repository now includes a minimal example `libft` implementation with basic functions. You can use it to test the framework or as a starting point for your own implementation. The example includes:
+
+- Basic string functions: `ft_strlen`, `ft_putstr_fd`, `ft_putendl_fd`, etc.
+- Memory functions: `ft_memset`, `ft_bzero`
+- Character check functions: `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`
+- Output functions: `ft_putchar_fd`, `ft_putnbr_fd`
+
+To build the example library:
+```bash
+make
+```
+
+To clean up:
+```bash
+make clean    # Remove object files
+make fclean   # Remove object files and library
+make re       # Rebuild everything
+```
+
+## Testing the Framework
 <img align="right" src="./srcs/img_readme.png" width="50%"/>
 This repository contains script to test your libft project.
 The script will do the following tests :
