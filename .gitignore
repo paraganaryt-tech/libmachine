@@ -1,0 +1,27 @@
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+test_*
+user_exe
+
+# Build directories
+dirlibft/
+
+# OS specific
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Test outputs
+deepthought
