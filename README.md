@@ -7,12 +7,17 @@ This update was made by @lmartin <br/>
 
 ## Example Library
 
-This repository now includes a minimal example `libft` implementation with basic functions. You can use it to test the framework or as a starting point for your own implementation. The example includes:
+This repository now includes a minimal example `libft` implementation with basic functions at the root level. You can use these files as a starting point for your own implementation or to understand how libft should be structured. The example includes:
 
-- Basic string functions: `ft_strlen`, `ft_putstr_fd`, `ft_putendl_fd`, etc.
-- Memory functions: `ft_memset`, `ft_bzero`
-- Character check functions: `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`
-- Output functions: `ft_putchar_fd`, `ft_putnbr_fd`
+- **libft.h**: Complete header file with all function prototypes
+- **Makefile**: Standard makefile with all required rules (all, clean, fclean, re)
+- **Implementation files**: 12 basic functions including:
+  - String functions: `ft_strlen`, `ft_putstr_fd`, `ft_putendl_fd`
+  - Memory functions: `ft_memset`, `ft_bzero`
+  - Character checks: `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`
+  - Output functions: `ft_putchar_fd`, `ft_putnbr_fd`
+
+### Building the Example
 
 To build the example library:
 ```bash
@@ -25,6 +30,20 @@ make clean    # Remove object files
 make fclean   # Remove object files and library
 make re       # Rebuild everything
 ```
+
+### Using with the Testing Framework
+
+To test these example files with the framework:
+1. Update `my_config.sh` and set `PATH_LIBFT` to this directory:
+   ```bash
+   PATH_LIBFT="/path/to/libmachine"
+   ```
+2. Run the test script for specific functions:
+   ```bash
+   bash grademe.sh ft_strlen
+   ```
+
+Or copy the example files to your own libft project directory and point `PATH_LIBFT` there.
 
 ## Testing the Framework
 <img align="right" src="./srcs/img_readme.png" width="50%"/>
